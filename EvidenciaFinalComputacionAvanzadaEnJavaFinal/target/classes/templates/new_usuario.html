@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:th="http://www.thymeleaf.org">
+    <head>
+        <meta charset="utf-8" />
+        <title>Registro de datos para creación de nuevo usuario</title>
+    </head>
+    <body style="background-color:#D6EAF8;">
+        <div align="center">
+            <h1>Registro de datos para creación de nuevo usuario</h1>
+            <br/>
+            <font size=5>
+            <form action="#" th:action="@{/saveUsuario}" th:object="${usuario}" method="post">
+                <table border="0" cellpadding="10">
+                    <tr>
+                        <td>Nombre:</td>
+                        <td><input type="text" th:field="*{nombre}" required="true"/></td>
+                    </tr>
+                    <tr>
+                        <td>Apellido:</td>
+                        <td><input type="text" th:field="*{apellido}" required="true"/></td>
+                    </tr>
+                    <tr>
+                        <td>Edad:</td>
+                        <td><input type="number" th:field="*{edad}" min="15" required="true"/></td>
+                    </tr>
+                    <tr>
+                        <td>Sexo</td>
+                        <td>
+                            <input type="radio" th:field="*{sexo}" value="M" required="true"/>Masculino
+                            <input type="radio" th:field="*{sexo}" value="F" required="true"/>Femenino         
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Email:</td>
+                        <td><input type="email" th:field="*{email}" required="true"/></td>
+                    </tr>
+                    <tr>
+                        <td>Contraseña:</td>
+                        <td><input type="password" th:field="*{contraseña}" required="true" min=4/></td>
+                    </tr>
+                    <tr>
+                        <td colspan="2">
+                            <center><button type="submit" style='width:140px; height:50px'>Aceptar</button> <br><br>
+                                <button type="button" style='width:140px; height:50px'><a href="/">Regresar</a></button>
+                           </center>
+                            
+                        </td>
+                    </tr>
+                </table>
+            </form></form>
+        </div>
+    </body>
+</html>

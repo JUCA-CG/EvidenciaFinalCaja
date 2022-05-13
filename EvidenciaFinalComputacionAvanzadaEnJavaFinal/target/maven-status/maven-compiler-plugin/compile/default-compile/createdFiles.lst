@@ -1,0 +1,12 @@
+net\codejava\repositories\UserRepository.class
+net\codejava\Formulario.class
+net\codejava\dto\UsuarioDTO.class
+net\codejava\entity\Usuario.class
+net\codejava\Methods.class
+net\codejava\services\UserService.class
+net\codejava\entity\Imc.class
+net\codejava\dto\ImcDTO.class
+net\codejava\repositories\ImcRepository.class
+net\codejava\services\ImcService.class
+net\codejava\controller\AppController.class
+net\codejava\AppMain.class
